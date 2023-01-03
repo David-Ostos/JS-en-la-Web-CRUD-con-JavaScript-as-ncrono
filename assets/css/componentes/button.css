@@ -26,6 +26,10 @@
   color: var(--info-color);
 }
 
+.simple-button--delete:hover {
+  cursor: pointer;
+}
+
 .simple-button--edit {
   color: var(--sucess-color);
 }
