@@ -1,6 +1,6 @@
 import { clientServices } from "../servive/client-service.js";
 const crearNuevaLinea = (nombre, email,id) =>{
-    const linea = document.createElement("tr");
+const linea = document.createElement("tr");
 const contenido = `
 <td class="td" data-td>${nombre}</td>
 <td>${email}</td>
@@ -30,14 +30,11 @@ const btn = linea.querySelector("button")
 
 btn.addEventListener("click", () => {
     const id = btn.id
-    console.log("EL click", id)
     clientServices.eliminarCliente(id).then(respuesta => {
-        console.log(respuesta)
+        respuesta
     }).catch(err => alert("ocurrio un error", err))
     location.reload()
 })
-
-console.log(btn)
 
 return linea
 }
@@ -51,5 +48,3 @@ clientServices.listaClientes().then((data) => {
         table.appendChild(nuevaLinea);
      });
 }).catch(error => alert("Ocurrio un error: " + error));
-
-
