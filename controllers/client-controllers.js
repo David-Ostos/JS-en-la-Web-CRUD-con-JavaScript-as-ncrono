@@ -8,7 +8,7 @@ const contenido = `
 <ul class="table__button-control">
     <li>
     <a
-        href="../screens/editar_cliente.html"
+        href="../screens/editar_cliente.html?id=${id}"
         class="simple-button simple-button--edit"
         >Editar</a
     >
@@ -37,6 +37,7 @@ btn.addEventListener("click", () => {
     location.reload()
 })
 
+console.log(btn)
 
 return linea
 }
@@ -50,4 +51,5 @@ clientServices.listaClientes().then((data) => {
         table.appendChild(nuevaLinea);
      });
 }).catch(error => alert("Ocurrio un error: " + error));
+
 
