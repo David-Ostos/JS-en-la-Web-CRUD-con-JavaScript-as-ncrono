@@ -7,13 +7,13 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyAzdauLRqxp1zCxnhpZFqVK2EF7Y-DSzFM",
-    authDomain: "doguito-petshop.firebaseapp.com",
-    projectId: "doguito-petshop",
-    storageBucket: "doguito-petshop.appspot.com",
-    messagingSenderId: "985460390772",
-    appId: "1:985460390772:web:a28e2e690dab69ba8e4a21",
-    measurementId: "G-9QZ6QCQVJ0"
+    apiKey: "AIzaSyAS248KWGzduWBnsNLs2Hn5RVzXubsJ6f8",
+    authDomain: "doguito-petshop-edea6.firebaseapp.com",
+    projectId: "doguito-petshop-edea6",
+    storageBucket: "doguito-petshop-edea6.appspot.com",
+    messagingSenderId: "929524484675",
+    appId: "1:929524484675:web:33cf112d41044bcd4822f6",
+    measurementId: "G-GSKJVTNL6T"
   };
 
   // Initialize Firebase

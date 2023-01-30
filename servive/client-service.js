@@ -1,7 +1,7 @@
-const listaClientes = () => fetch("http://localhost:3000/perfil").then(respuesta => respuesta.json())
+const listaClientes = () => fetch("https://david-doguito-petshop.vercel.app/").then(respuesta => respuesta.json())
 
 const crearCliente = (nombre,email) =>{
-    return fetch("http://localhost:3000/perfil", {
+    return fetch("https://david-doguito-petshop.vercel.app/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -11,15 +11,15 @@ const crearCliente = (nombre,email) =>{
 }
 
 const eliminarCliente = (id) => {
-    return fetch(`http://localhost:3000/perfil/${id}`, {
+    return fetch(`https://david-doguito-petshop.vercel.app/${id}`, {
         method: "DELETE"
 })
 }
 
-const detalleCliente = (id) => fetch(`http://localhost:3000/perfil/${id}`).then( respuesta => respuesta.json());
+const detalleCliente = (id) => fetch(`https://david-doguito-petshop.vercel.app/${id}`).then( respuesta => respuesta.json());
 
 const actualizarCliente = (nombre, email, id) => {
-    return fetch(`http://localhost:3000/perfil/${id}`,{
+    return fetch(`https://david-doguito-petshop.vercel.app/${id}`,{
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
